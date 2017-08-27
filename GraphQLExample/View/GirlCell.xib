@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="GirlCell" customModule="GraphQLExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7jh-gE-W3K">
+                        <rect key="frame" x="24" y="8" width="45" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tdp-hy-s2c">
+                        <rect key="frame" x="24" y="39.5" width="30" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0W-Gq-ins">
+                        <rect key="frame" x="24" y="70.5" width="51" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="i0W-Gq-ins" firstAttribute="top" secondItem="Tdp-hy-s2c" secondAttribute="bottom" constant="10" id="7BR-hI-EsN"/>
+                    <constraint firstItem="i0W-Gq-ins" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="LxL-nU-tH2"/>
+                    <constraint firstItem="Tdp-hy-s2c" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Mcu-4v-VAp"/>
+                    <constraint firstItem="7jh-gE-W3K" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="RSO-V0-LVD"/>
+                    <constraint firstItem="Tdp-hy-s2c" firstAttribute="top" secondItem="7jh-gE-W3K" secondAttribute="bottom" constant="10" id="VU0-wR-3yV"/>
+                    <constraint firstItem="Tdp-hy-s2c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="fQD-dJ-smV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="ageLabel" destination="Tdp-hy-s2c" id="tlA-MP-8TT"/>
+                <outlet property="heightLabel" destination="i0W-Gq-ins" id="5HY-mT-eqR"/>
+                <outlet property="nameLabel" destination="7jh-gE-W3K" id="chj-Mq-lLi"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="80"/>
+        </tableViewCell>
+    </objects>
+</document>

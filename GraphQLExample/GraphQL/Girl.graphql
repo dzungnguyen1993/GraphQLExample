@@ -1,0 +1,24 @@
+fragment GirlFullDetails on Girl {
+    id
+    name
+    age
+    height
+}
+
+query GirlsDetails {
+    allGirls {
+        ...GirlFullDetails
+    }
+}
+
+mutation CreateGirl($name: String!, $age: Int!, $height: Float!) {
+    createGirl(name: $name, age: $age, height: $height) {
+        id
+    }
+}
+
+mutation UpdateGirl($id: ID!, $newName: String!, $newAge: Int!, $newHeight: Float!) {
+    updateGirl(id: $id, name: $newName, age: $newAge, height: $newHeight) {
+        id
+    }
+}
